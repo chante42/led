@@ -1,0 +1,89 @@
+<html>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        
+        jQuery("#plugin-menu .plugin-nav a").click(function () {
+            jQuery("#plugin-menu .content > ul").hide();
+            jQuery("#plugin-menu .plugin-nav ul li").removeClass("active");
+            jQuery(this).parent().addClass("active");
+            jQuery("#" + jQuery(this).data("toggle")).show();
+            return false;
+        });
+    });
+</script>
+
+<p class="page-header" style="margin-top:0px">
+
+    <span class="lead">Piloter un de 8 lex 8x8 par la voix ou sur le portlet</span>
+    
+    <br/></br>
+	<b>Version 1.0.1</b>
+</p>
+
+<div id="plugin-menu" class="row-fluid">
+    <!--Navigation-->
+    <div class="span3 well plugin-nav" style="margin-bottom:0px">
+        <ul class="nav nav-list">
+            <li class="nav-header">Documentation</li>
+            <li><a href="#" data-toggle="plugin-installation">Installation</a></li>
+            <li><a href="#" data-toggle="plugin-principe">Le Fonctionnement</a></li>
+            <li><a href="#" data-toggle="plugin-examples">Exemples</a></li>
+            <li><a href="#" data-toggle="plugin-infos">Infos</a></li>
+            <li><a href="#" data-toggle="plugin-version">Historique des Versions</a></li>
+            <li><a href="#" data-toggle="plugin-bugs">Bugs connus</a></li>
+        </ul>
+    </div>
+    <!--Content-->
+    <div class="span9 content">
+       <!--Principe-->
+        <ul class="unstyled" id="plugin-installation" >
+            <h3>Installation :</h3>
+        	
+        </ul>
+    </div>
+
+    <div class="span9 content">
+       <!--Principe-->
+        <ul class="unstyled" id="plugin-version" style="display: none";>
+            <h3>Historique des versions :</h3>
+            <li><strong>TODO :</strong></li>
+            
+        </ul>
+    </div>
+    <div class="span9 content">
+        <!--Principe-->
+        
+        <ul class="unstyled" id="plugin-principe" style="display: none";>
+            <h3>Le fonctionnement:</h3>
+            
+        	<br/>
+			
+        </ul>
+    </div>
+		
+    <div class="span9 content">
+       <!--Exemples -->
+        <ul class="unstyled" id="plugin-examples" style="display: none;">
+            <h3>Exemples:</h3>
+            
+        </ul>
+    </div>
+		<!--Infos-->
+    <div class="span9 content"> 
+        <ul class="unstyled" id="plugin-infos" style="display: none;">
+            <h3>Infos:</h3>
+        	
+            
+        </ul> 
+    </div>
+    <div class="span9 content">
+       <!--Exemples -->
+        <ul class="unstyled" id="plugin-bugs" style="display: none;">
+            <h3>Bugs connus:</h3>
+            
+
+        </ul>
+    </div>
+</div></body>
+</html>
