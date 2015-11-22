@@ -1,0 +1,9 @@
+.plugin-gridster.led .front {
+  background: #FFFFFF url('images/led.png') center 25px;
+  background-size:   150px 150px;
+  background-repeat: no-repeat;
+}
+
+.plugin-gridster.led .back {
+  background: #FFFF00;
+}

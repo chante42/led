@@ -1,0 +1,29 @@
+<h3 class='default'><%= key %> - <%= module.version %></h3>
+<% stylesheet('assets/'+key+'/portlet.css') %>
+
+
+<script type="text/javascript">
+	$(document).ready(
+	  function() {
+		console.log("led charge");
+	});
+	
+function  callLED(key) {
+	myUrl="/sarah/led/?key="+key;
+	console.log(myUrl);
+	$.ajax(myUrl);
+}
+
+</script>
+
+<form method="post" name="message" >
+	<br><br>
+   <p>
+       <textarea  type="textfield" name="message" id="messages" ></textarea>
+       <input type="button" value="ok" onClick='callLED("m:"+encodeURIComponent(this.form.message.value)); return(false)'/>
+       <input type="button" value="v+" onClick='callLED("v:15"); return(false)'/>
+       <input type="button" value="v-" onClick='callLED("v:1"); return(false)'/>
+       <input type="button" value="l+" onClick='callLED("v:15"); return(false)'/>
+       <input type="button" value="l-" onClick='callLED("v:1"); return(false)'/>
+   </p>
+</form>

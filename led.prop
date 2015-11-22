@@ -1,0 +1,9 @@
+{
+  "modules" : { 
+    "led"  : {
+      "description": "Pilote mon afficheur LED",
+      "version" : "1.0",
+      "USBdevice" : ""
+    }
+  }
+}
